@@ -1,0 +1,4 @@
+<app-header></app-header>
+<p>comp1 works!</p>
+<a (click)='openDialog()' >Open Dialog</a>
+<app-confirmmodal [show]='showDialog' (selection)="onSelection($event)" ></app-confirmmodal>
