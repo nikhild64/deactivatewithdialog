@@ -5,21 +5,19 @@ import { ConfirmationService } from 'primeng/api';
   selector: 'app-confirmmodal',
   templateUrl: './confirmmodal.component.html',
   styleUrls: ['./confirmmodal.component.css'],
-  providers:[ConfirmationService]
+  providers: [ConfirmationService],
 })
 export class ConfirmmodalComponent implements OnInit {
-
-  constructor(private confirmationService: ConfirmationService) { }
-@Input('show') display!: boolean;
-@Output('selection') selection=new EventEmitter();
-  ngOnInit(): void {
-  }
-  selected(value:string){
+  constructor(private confirmationService: ConfirmationService) {}
+  @Input('show') display!: boolean;
+  @Output('selection') selection = new EventEmitter();
+  ngOnInit(): void {}
+  selected(value: string) {
     this.selection.emit(value);
-    this.display=false;
+    this.display = false;
   }
-  dialogHidden($event:any){
-console.log($event);
-this.selection.emit('close');
+  dialogHidden($event: any) {
+    console.log($event);
+    this.selection.emit('close');
   }
 }

@@ -7,9 +7,9 @@ import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp2/comp2.component';
 import { HeaderComponent } from './header/header.component';
 import { ConfirmmodalComponent } from './confirmmodal/confirmmodal.component';
-import {DialogModule} from 'primeng/dialog';
-import {ConfirmationService} from 'primeng/api';
-import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import { DialogModule } from 'primeng/dialog';
+import { ConfirmationService } from 'primeng/api';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
@@ -17,16 +17,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     Comp1Component,
     Comp2Component,
     HeaderComponent,
-    ConfirmmodalComponent
+    ConfirmmodalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DialogModule,
     BrowserAnimationsModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
